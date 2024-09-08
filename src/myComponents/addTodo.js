@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AddTodo = ({addTodo}) => {
+export default function AddTodo ({addTodo}){
     const [title, setTitle] = useState("");
     const [subject, setSubject] = useState("");
 
@@ -12,7 +12,7 @@ const AddTodo = ({addTodo}) => {
         }
         addTodo(title, subject);
         // Logic to handle the form submission
-        // console.log("Todo submitted:", { title, subject });
+        console.log("Todo submitted:", { title, subject });
         setTitle(""); // Clear the form
         setSubject("");
     }
@@ -35,4 +35,3 @@ const AddTodo = ({addTodo}) => {
     );
 }
 
-export default AddTodo;

@@ -34,5 +34,5 @@ Header.propTypes = {
 
 Header.defaultProps = {
   title: "Here is the Title",
-  searchBar: true
+  searchBar: false
 }
